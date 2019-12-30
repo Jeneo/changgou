@@ -56,7 +56,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/changgou-parent/changgou-service/changgou-service-file/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../code-template" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/code-template/pom.xml" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15527344" />
@@ -226,7 +226,7 @@
       <workItem from="1577525761089" duration="16514000" />
       <workItem from="1577589539900" duration="6567000" />
       <workItem from="1577705634120" duration="33000" />
-      <workItem from="1577716609975" duration="2253000" />
+      <workItem from="1577716609975" duration="2986000" />
     </task>
     <servers />
   </component>
