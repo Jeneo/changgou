@@ -3,72 +3,74 @@ package com.changgou.goods.pojo;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.io.Serializable;
 
+/****
+ * @Author:shenkunlin
+ * @Description:Album构建
+ * @Date 2019/6/14 19:13
+ *****/
 @ApiModel(description = "Album",value = "Album")
-@Table(name = "tb_album")
-public class Album {
-    @ApiModelProperty(value = "相册id",required = false)
-    @Id
-    @Column(name="id")
-    private Integer id;
+@Table(name="tb_album")
+public class Album implements Serializable{
 
-    @ApiModelProperty(value = "相册名称",required = false)
-    @Column(name="title")
-    private String  title;
+	@ApiModelProperty(value = "编号",required = false)
+	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+	private Long id;//编号
 
-    @ApiModelProperty(value = "相册图片路径",required = false)
-    @Column(name="image")
-    private  String image;
+	@ApiModelProperty(value = "相册名称",required = false)
+    @Column(name = "title")
+	private String title;//相册名称
 
-    @ApiModelProperty(value = "相册图片明细路径",required = false)
-    @Column(name="image_items")
-    private String imageItems;
+	@ApiModelProperty(value = "相册封面",required = false)
+    @Column(name = "image")
+	private String image;//相册封面
 
-    public Integer getId() {
-        return id;
-    }
+	@ApiModelProperty(value = "图片列表",required = false)
+    @Column(name = "image_items")
+	private String imageItems;//图片列表
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
-    public String getTitle() {
-        return title;
-    }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+	//get方法
+	public Long getId() {
+		return id;
+	}
 
-    public String getImage() {
-        return image;
-    }
+	//set方法
+	public void setId(Long id) {
+		this.id = id;
+	}
+	//get方法
+	public String getTitle() {
+		return title;
+	}
 
-    public void setImage(String image) {
-        this.image = image;
-    }
+	//set方法
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	//get方法
+	public String getImage() {
+		return image;
+	}
 
-    public String getImageItems() {
-        return imageItems;
-    }
+	//set方法
+	public void setImage(String image) {
+		this.image = image;
+	}
+	//get方法
+	public String getImageItems() {
+		return imageItems;
+	}
 
-    public void setImageItems(String imageItems) {
-        this.imageItems = imageItems;
-    }
+	//set方法
+	public void setImageItems(String imageItems) {
+		this.imageItems = imageItems;
+	}
 
-    public Album() {
-    }
 
-    @Override
-    public String toString() {
-        return "Album{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", image='" + image + '\'' +
-                ", imageItems='" + imageItems + '\'' +
-                '}';
-    }
 }

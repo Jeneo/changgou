@@ -1,0 +1,52 @@
+spring:
+  application:
+    name: sysgateway
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]': # 匹配所有请求
+            allowedOrigins: "*" #跨域处理 允许所有的域
+            allowedMethods: # 支持的方法
+              - GET
+              - POST
+              - PUT
+              - DELETE
+      routes:
+        #唯一标识符
+        - id: goods
+#          uri: lb://goods
+          #用户请求的自动路由到该服务
+          uri: http://localhost:18081
+          #路由断言
+          predicates:
+          #所有已mozilla.com.cn请求都会被路由,改例子因为是单机上运行,需要修改hosts
+          #加上127.0.0.1 mozilla.com.cn 才会生效
+          #- Host=mozilla.com.cn**
+          #已请求路径过滤
+            - Path=/api/**
+
+          filters:
+            #  请求路径中去掉第一个,一个/代表一个路径,例如xxxx/api/brand,会变成xxxx/brand
+            - StripPrefix= 1
+#            - name: RequestRateLimiter #请求数限流 名字不能随便写
+#              args:
+#                key-resolver: "#{@ipKeyResolver}"
+#                redis-rate-limiter.replenishRate: 1 #令牌桶每秒填充平均速率
+#                redis-rate-limiter.burstCapacity: 1 #令牌桶总容量
+        - id: system
+          uri: lb://system
+          predicates:
+            - Path=/system/**
+          filters:
+            - StripPrefix= 1
+  redis:
+    host: 120.24.89.4
+server:
+  port: 8001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka
+  instance:
+    prefer-ip-address: true

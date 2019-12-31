@@ -1,0 +1,4 @@
+com\changgou\com\changgou\controller\FileUploadController.class
+com\changgou\FileApplication.class
+com\changgou\com\changgou\file\FastDFSFile.class
+com\changgou\com\changgou\util\FastDFSUtil.class

@@ -10,7 +10,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 /**
  * 调用的tk 的包扫描
  */
-@MapperScan(basePackages = {"com.changgou.dao"})
+@MapperScan(basePackages = {"com.changgou.goods.dao"})
 public class GoodsApplication {
     public static void main(String[] args) {
         SpringApplication.run(GoodsApplication.class,args);

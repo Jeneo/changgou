@@ -35,7 +35,7 @@
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\java\mvn" />
         <option name="mavenHome" value="D:/java/apache-maven-3.6.1" />
-        <option name="userSettingsFile" value="C:\Users\10718\.m2\settings.xml" />
+        <option name="userSettingsFile" value="D:\java\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -43,6 +43,9 @@
         <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
   </component>
   <component name="ProjectId" id="1VU4wH7L47UrZEjXhj7BG30Tk4R" />
   <component name="PropertiesComponent">
@@ -56,27 +59,33 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/changgou-parent/changgou-service/changgou-service-file/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/code-template/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/code-template" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15527344" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\git\cause\changgou\changgou-parent" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.changgou.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java_git\course\changgou\changgou-parent\changgou-service\changgou-service-goods\src\main\java\com\changgou\goods" />
+      <recent name="D:\java_git\course\changgou\changgou-parent\changgou-service\changgou-service-goods\src\main\java" />
+      <recent name="D:\java_git\course\changgou\changgou-parent\changgou-service-api\changgou-service-goods-api\src\main\java\com\changgou\goods\pojo" />
+      <recent name="D:\java_git\course\changgou\changgou-parent\changgou-gateway\changgou-gateway-system\src\main\java" />
       <recent name="D:\git\cause\changgou\changgou-parent\changgou-service\changgou-service-file\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.changgou.goods.pojo" />
       <recent name="com.changgou.controller" />
       <recent name="com.changgou.service.impl" />
       <recent name="com.changgou.dao" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.changgou.service.impl" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\git\cause\changgou\changgou-parent" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -91,20 +100,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GoodsApplication">
-    <configuration name="CodeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.itheima.CodeApplication" />
-      <module name="code-template" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itheima.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.CodeApplication">
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="changgou_common_db" />
       <option name="VM_PARAMETERS" />
@@ -152,6 +148,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CodeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itheima.CodeApplication" />
+      <module name="code-template" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="changgou-eureka" />
       <extension name="coverage">
@@ -161,6 +170,19 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.changgou.EurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GateWayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="changgou-gateway-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.changgou.system.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.changgou.system.GateWayApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -190,6 +212,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.CodeApplication" />
+        <item itemvalue="Spring Boot.GateWayApplication" />
         <item itemvalue="Spring Boot.GoodsApplication" />
         <item itemvalue="Spring Boot.EurekaApplication" />
       </list>
@@ -227,6 +250,11 @@
       <workItem from="1577589539900" duration="6567000" />
       <workItem from="1577705634120" duration="33000" />
       <workItem from="1577716609975" duration="2986000" />
+      <workItem from="1577760158786" duration="1748000" />
+      <workItem from="1577765457923" duration="407000" />
+      <workItem from="1577774125476" duration="3505000" />
+      <workItem from="1577778427966" duration="285000" />
+      <workItem from="1577779814932" duration="9299000" />
     </task>
     <servers />
   </component>

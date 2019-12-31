@@ -1,0 +1,66 @@
+spring:
+  application:
+    name: sysgateway
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]': # 匹配所有请求
+            allowedOrigins: "*" #跨域处理 允许所有的域
+            allowedMethods: # 支持的方法
+              - GET
+              - POST
+              - PUT
+              - DELETE
+      routes:
+        #唯一标识符
+        - id: goods
+
+          #用户请求的自动路由到该服务
+          uri: http://localhost:18081
+
+          #把http 改成lb 会采用负载均衡的策略
+          #后面的goods 是指微服务的名字,就是spring.application.name: goods
+          #uri: lb://goods
+
+          #路由断言
+          predicates:
+          #所有已mozilla.com.cn请求都会被路由,改例子因为是单机上运行,需要修改hosts
+          #加上127.0.0.1 mozilla.com.cn 才会生效
+          #- Host=mozilla.com.cn**
+          #已请求路径过滤
+            - Path=/goods/**
+
+          filters:
+            #  请求路径中去掉第一个,一个/代表一个路径,例如xxxx/goods/brand,会变成xxxx/brand
+            - StripPrefix= 1
+            #  加入请求路径 Path=/**  ,那么输入请求xxxx/1 ,会变成xxxx/brand/1
+            # 与StripPrefix 与 PrefixPath 一般都是使用一个,一个减,一个加
+#            - PrefixPath=/brand
+            - name: RequestRateLimiter #请求数限流 名字不能随便写 ,局部限流过滤器
+              #参数
+              args:
+                #用户身份唯一识别符,  自己的bean
+                key-resolver: "#{@ipKeyResolver}"
+                #跟nginx的漏铜 里面的参数一样的意思:rate 和  burst  一样
+                redis-rate-limiter.replenishRate: 1 #令牌桶每秒填充平均速率,就是每秒处理的请求数据,
+                redis-rate-limiter.burstCapacity: 1 #令牌桶总容量,运行并发的个数
+
+
+        ##另外一个微服务
+        - id: system
+          uri: lb://system
+          predicates:
+            - Path=/system/**
+          filters:
+            - StripPrefix= 1
+  redis:
+    host: 120.24.89.4
+server:
+  port: 8001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka
+  instance:
+    prefer-ip-address: true
