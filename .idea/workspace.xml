@@ -256,7 +256,7 @@
       <workItem from="1577778427966" duration="285000" />
       <workItem from="1577779814932" duration="9299000" />
       <workItem from="1577790302277" duration="1087000" />
-      <workItem from="1577802093810" duration="380000" />
+      <workItem from="1577802093810" duration="642000" />
     </task>
     <servers />
   </component>
@@ -275,11 +275,6 @@
           <url>file://$PROJECT_DIR$/code-template/src/main/java/com/itheima/code/build/TemplateBuilder.java</url>
           <line>92</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/code-template/src/main/java/com/itheima/code/build/TemplateBuilder.java</url>
-          <line>110</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
