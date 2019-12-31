@@ -8,7 +8,10 @@
     <artifactId>code-template</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <description>代码生成器</description>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+    </properties>
 
     <dependencies>
         <!--驱动包-->
