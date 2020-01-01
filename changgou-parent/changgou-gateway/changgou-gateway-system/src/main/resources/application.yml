@@ -36,7 +36,7 @@ spring:
             - StripPrefix= 1
             #  加入请求路径 Path=/**  ,那么输入请求xxxx/1 ,会变成xxxx/brand/1
             # 与StripPrefix 与 PrefixPath 一般都是使用一个,一个减,一个加
-#            - PrefixPath=/brand
+            #- PrefixPath=/brand
             - name: RequestRateLimiter #请求数限流 名字不能随便写 ,局部限流过滤器
               #参数
               args:
@@ -54,8 +54,17 @@ spring:
             - Path=/system/**
           filters:
             - StripPrefix= 1
+
+        ##user微服务
+        - id: user
+          uri: lb://user
+          predicates:
+            - Path=/user/**
+          filters:
+            - StripPrefix= 1
   redis:
     host: 120.24.89.4
+    port: 6379
 server:
   port: 8001
 eureka:

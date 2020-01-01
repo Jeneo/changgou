@@ -22,11 +22,15 @@
     <expand />
     <select />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="changgou" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Kotlin File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -35,7 +39,7 @@
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\java\mvn" />
         <option name="mavenHome" value="D:/java/apache-maven-3.6.1" />
-        <option name="userSettingsFile" value="D:\java\apache-maven-3.6.1\conf\settings.xml" />
+        <option name="userSettingsFile" value="C:\Users\10718\.m2\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -44,13 +48,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenRunner">
-    <option name="skipTests" value="true" />
-  </component>
   <component name="ProjectId" id="1VU4wH7L47UrZEjXhj7BG30Tk4R" />
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -59,36 +59,42 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/changgou-parent/changgou-service/changgou-service-file/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/code-template" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/changgou-parent/changgou-service/changgou-service-user/src/main/java/com/changgou/user/controller" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15527344" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
-    <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\git\cause\changgou\changgou-parent" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.changgou.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\java_git\course\changgou\changgou-parent\changgou-service\changgou-service-goods\src\main\java\com\changgou\goods" />
-      <recent name="D:\java_git\course\changgou\changgou-parent\changgou-service\changgou-service-goods\src\main\java" />
-      <recent name="D:\java_git\course\changgou\changgou-parent\changgou-service-api\changgou-service-goods-api\src\main\java\com\changgou\goods\pojo" />
-      <recent name="D:\java_git\course\changgou\changgou-parent\changgou-gateway\changgou-gateway-system\src\main\java" />
-      <recent name="D:\git\cause\changgou\changgou-parent\changgou-service\changgou-service-file\src\main\resources" />
+      <recent name="D:\git\cause\changgou\changgou-parent\changgou-service\changgou-service-user\src\main\java\com\changgou\user\controller" />
+      <recent name="D:\git\cause\changgou\changgou-parent\changgou-service\changgou-service-user\src\main\java\com\changgou\user\service\impl" />
+      <recent name="D:\git\cause\changgou\changgou-parent\changgou-service\changgou-service-user\src\main\java\com\changgou\user\service" />
+      <recent name="D:\git\cause\changgou\changgou-parent\changgou-service\changgou-service-user\src\main\java\com\changgou\user\dao" />
+      <recent name="D:\git\cause\changgou\changgou-parent\changgou-service-api\changgou-service-user-api\src\main\java\com\changgou\user\pojo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.changgou.goods.pojo" />
+      <recent name="com.changgou.util" />
+      <recent name="com.changgou.user" />
       <recent name="com.changgou.controller" />
       <recent name="com.changgou.service.impl" />
       <recent name="com.changgou.dao" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.changgou.service.impl" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\git\cause\changgou\changgou-parent\changgou-service\changgou-service-user\src\main" />
+      <recent name="D:\git\cause\changgou\changgou-parent" />
     </key>
   </component>
   <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
     <option name="ruleStates">
       <list>
         <RuleState>
@@ -100,7 +106,38 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CodeApplication">
+  <component name="RunManager" selected="JUnit.ParseJwtTest">
+    <configuration name="CreateJWTTest.createJWT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="changgou-user-oauth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.changgou.oauth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.changgou.oauth" />
+      <option name="MAIN_CLASS_NAME" value="com.changgou.oauth.CreateJWTTest" />
+      <option name="METHOD_NAME" value="createJWT" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParseJwtTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="changgou-user-oauth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.changgou.oauth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.changgou.oauth" />
+      <option name="MAIN_CLASS_NAME" value="com.changgou.oauth.ParseJwtTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="changgou_common_db" />
       <option name="VM_PARAMETERS" />
@@ -148,24 +185,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CodeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.itheima.CodeApplication" />
-      <module name="code-template" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itheima.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="changgou-eureka" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.changgou.*" />
+          <option name="PATTERN" value="com.changgou.goods.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -187,15 +211,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoodsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="changgou-service-goods" />
+    <configuration name="OAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="changgou-user-oauth" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.changgou.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.changgou.GoodsApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.changgou.OAuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="changgou-service-user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.changgou.user.UserApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -209,11 +241,20 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.UserApplication" />
+      <item itemvalue="Spring Boot.EurekaApplication" />
+      <item itemvalue="Spring Boot.GateWayApplication" />
+      <item itemvalue="Spring Boot.OAuthApplication" />
+      <item itemvalue="JUnit.CreateJWTTest.createJWT" />
+      <item itemvalue="JUnit.ParseJwtTest" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CodeApplication" />
         <item itemvalue="Spring Boot.GateWayApplication" />
-        <item itemvalue="Spring Boot.GoodsApplication" />
+        <item itemvalue="Spring Boot.OAuthApplication" />
+        <item itemvalue="JUnit.ParseJwtTest" />
+        <item itemvalue="JUnit.CreateJWTTest.createJWT" />
         <item itemvalue="Spring Boot.EurekaApplication" />
       </list>
     </recent_temporary>
@@ -221,10 +262,28 @@
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
       <serviceView>
+        <option name="contentProportion" value="0.17911255" />
         <treeState>
-          <expand />
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ContributorNode@1d2556d7" type="d2cb1801:ServiceModel$ContributorNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ContributorNode@1d2556d7" type="d2cb1801:ServiceModel$ContributorNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@a4d73561" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ContributorNode@1d2556d7" type="d2cb1801:ServiceModel$ContributorNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@a4d73561" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5ec3c90b" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
           <select />
         </treeState>
+        <option name="groupByContributor" value="true" />
       </serviceView>
     </option>
   </component>
@@ -249,34 +308,14 @@
       <workItem from="1577525761089" duration="16514000" />
       <workItem from="1577589539900" duration="6567000" />
       <workItem from="1577705634120" duration="33000" />
-      <workItem from="1577716609975" duration="2986000" />
-      <workItem from="1577760158786" duration="1748000" />
-      <workItem from="1577765457923" duration="407000" />
-      <workItem from="1577774125476" duration="3505000" />
-      <workItem from="1577778427966" duration="285000" />
-      <workItem from="1577779814932" duration="9299000" />
-      <workItem from="1577790302277" duration="1087000" />
-      <workItem from="1577802093810" duration="642000" />
+      <workItem from="1577716609975" duration="5044000" />
+      <workItem from="1577808838722" duration="72000" />
+      <workItem from="1577809149150" duration="5053000" />
+      <workItem from="1577846323316" duration="37578000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/code-template/src/main/java/com/itheima/code/build/TemplateBuilder.java</url>
-          <line>89</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/code-template/src/main/java/com/itheima/code/build/TemplateBuilder.java</url>
-          <line>92</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

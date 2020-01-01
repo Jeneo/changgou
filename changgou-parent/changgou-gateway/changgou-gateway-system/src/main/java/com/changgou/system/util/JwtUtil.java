@@ -3,10 +3,12 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtBuilder;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import springfox.documentation.spring.web.json.Json;
+
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
-import java.util.Base64;
-import java.util.Date;
+import java.util.*;
+
 /**
  * JWT工具类
  */
@@ -25,7 +27,6 @@ public class JwtUtil {
      * @return
      */
     public static String createJWT(String id, String subject, Long ttlMillis) {
-
         SignatureAlgorithm signatureAlgorithm = SignatureAlgorithm.HS256;
         long nowMillis = System.currentTimeMillis();
         Date now = new Date(nowMillis);
@@ -43,6 +44,9 @@ public class JwtUtil {
                 .setIssuedAt(now)      // 签发时间
                 .signWith(signatureAlgorithm, secretKey) //使用HS256对称加密算法签名, 第二个参数为秘钥
                 .setExpiration(expDate);// 设置过期时间
+        //自定义载荷
+//        if (!(Objects.isNull(claims) || claims.isEmpty()))
+//            builder.addClaims(claims);
         return builder.compact();
     }
 
@@ -69,5 +73,16 @@ public class JwtUtil {
                 .setSigningKey(secretKey)
                 .parseClaimsJws(jwt)
                 .getBody();
+    }
+
+
+    public static void main(String[] args) throws Exception {
+        Map<String,Object> map=new HashMap<>();
+        map.put("first","who ");
+        map.put("second"," am ");
+        map.put("third"," i");
+        String jwt = createJWT(UUID.randomUUID().toString(), map.toString(), 2000L);
+        System.out.println(jwt);
+        System.out.println(JwtUtil.parseJWT(jwt));
     }
 }

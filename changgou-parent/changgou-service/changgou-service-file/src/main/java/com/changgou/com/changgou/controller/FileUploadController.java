@@ -3,14 +3,11 @@ package com.changgou.com.changgou.controller;
 
 import com.changgou.com.changgou.file.FastDFSFile;
 import com.changgou.com.changgou.util.FastDFSUtil;
-import com.sun.javafx.logging.PulseLogger;
-import entity.Result;
-import entity.StatusCode;
+import com.changgou.entity.Result;
+import com.changgou.entity.StatusCode;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-
-import java.io.IOException;
 
 @RestController
 @RequestMapping(value = "/file")
